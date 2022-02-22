@@ -1,0 +1,170 @@
+@charset "utf-8";
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+body{
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+#tela1,#tela2,#tela3,#tela4,#tela5{
+    
+    width: 100%;
+    height: 100%;
+}
+#tela1{
+    background-color: #00b050;
+}
+header{
+    background-color: #a9d18e;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
+}
+nav{
+    width: 60%;
+    height: 40%;
+    background-color: #4471c4;
+    display: flex;
+}
+ul{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+li{
+    color:white;
+    font-weight: bold;
+
+}
+#tela1 main{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+#tela1-fig1{
+    background-color: #4471c4;
+    height: 40%;
+    width: 80%;
+
+}
+#tela1-fig2{
+    background-color: #4471c4;
+    width:50%;
+    height: 20%;
+}
+#tela2{
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tela2 main{
+    width: 95%;
+    height: 60%;
+    background-color: greenyellow;display: flex;
+
+}
+
+#tela2-sec1{
+    height: 100%;
+    width: 40%;
+    background-color: #fabc00;
+}
+#tela2-sec2{
+    height: 100%;
+    width: 60%;
+    background-color: #fff2cc;
+}
+#tela3{
+    background-color: #2e74b6;
+}
+
+#tela3-top{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#tela3-top div{
+    
+    height: 90%;
+    width: 35%;
+    background-color: #fabc00;
+}
+#tela3-bottom{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#tela3-bottom div{
+    border: 3px solid #5b696f;
+    height: 50%;
+    width: 33%;
+    background-color: #fabc00;
+    border-radius: 2%;
+}
+#tela4{
+    background-color: #ed7d31;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tela4 main{
+    background-color: #4471c4;
+    width: 90%;
+    height: 70%;
+    border: 3px solid #5b696f;
+    border-radius: 0.5%;
+}
+#tela5{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tela5 main{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#tela5 main figure{
+    width: 90%;
+    height: 85%;
+    background-color: rgb(255, 255, 255);
+}
+#tela5 section{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+#tela5 section div{
+    width: 90%;
+    height: 15%;
+    background-color: rgb(255, 255, 255);
+    margin: 4%;
+}
