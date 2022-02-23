@@ -19,11 +19,12 @@ body{
 #tela1,#tela2,#tela3,#tela4,#tela5{
     
     width: 100%;
-    height: 100%;
+    height: 103%;
 }
 #tela1{
     background-image: url("../img/fundo.jpeg");
     background-size: cover;
+    background-attachment: fixed;
 }
 header{
     background-color: #f0ae3c;
@@ -90,10 +91,12 @@ li{
 }
 
 #tela2{
-    background-color: rgb(253, 253, 253);
+    background-image: url("../img/deep_ocean.jpg_dl=1");
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 #tela2 main{
     width: 95%;
@@ -113,10 +116,21 @@ li{
 }
 #tela2-sec2 h2{
     text-align: center;
+    padding-bottom: 3%;
+    color: rgb(248, 245, 51);
+    text-shadow: 0 0 1px #000;
 }
+#tela2-sec2 p{
+    text-align: justify;
+    color: rgb(185, 183, 183);
+    text-shadow: 1px 1px 1px #000;
+    }
+
 
 #tela3{
-    background-color: #2e74b6;
+    background-image: url("/img/circuit_back.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 #tela3-top{
@@ -127,10 +141,10 @@ li{
     justify-content: space-around;
 }
 #tela3-top div{
-    
+    display: flex;
+    align-items: flex-end;
     height: 90%;
-    width: 35%;
-    background-color: #fabc00;
+    width: 35%;    
 }
 #tela3-bottom{
     width: 100%;
@@ -140,11 +154,17 @@ li{
     justify-content: space-around;
 }
 #tela3-bottom div{
-    border: 3px solid #5b696f;
     height: 50%;
     width: 33%;
-    background-color: #fabc00;
-    border-radius: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#tela3-bottom div p {
+    font-size: 7vmin;
+    color:orangered;
+    text-shadow:0 0 2px #000;
+
 }
 #tela4{
     background-color: #ed7d31;
@@ -160,7 +180,9 @@ li{
     border-radius: 0.5%;
 }
 #tela5{
-    background-color: rgb(37, 37, 37);
+    background-image: url("/img/map_background.jpeg");
+    background-attachment: fixed;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -176,8 +198,13 @@ li{
 #tela5 main figure{
     width: 90%;
     height: 85%;
-    background-color: rgb(255, 255, 255);
+    border: solid black 0.5px ;
 }
+#tela5 main figure iframe{
+    height: 100%;
+    width: 100%;    
+}
+
 #tela5 section{
     width: 50%;
     height: 100%;
@@ -190,7 +217,9 @@ li{
 }
 #tela5 section div{
     width: 90%;
-    height: 15%;
+    height: 13.5%;
     background-color: rgb(255, 255, 255);
     margin: 4%;
+    padding: 5px;
+    text-align: justify;
 }
