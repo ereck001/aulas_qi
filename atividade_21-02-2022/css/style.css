@@ -6,11 +6,15 @@
     text-decoration: none;
     font-family: sans-serif;
 }
+img{
+    width: 100%;
+}
 body{
     
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: absolute;    
+    background-attachment: fixed;
 }
 #tela1,#tela2,#tela3,#tela4,#tela5{
     
@@ -18,10 +22,11 @@ body{
     height: 100%;
 }
 #tela1{
-    background-color: #00b050;
+    background-image: url("../img/fundo.jpeg");
+    background-size: cover;
 }
 header{
-    background-color: #a9d18e;
+    background-color: #f0ae3c;
     width: 100%;
     height: 20%;
     display: flex;
@@ -31,8 +36,12 @@ header{
 nav{
     width: 60%;
     height: 40%;
-    background-color: #4471c4;
+    background-color: #ffd283;
     display: flex;
+    margin: -2%;
+    margin-right: 1.5%;
+    transform: skew(-15deg);
+    
 }
 ul{
     width: 100%;
@@ -44,6 +53,7 @@ ul{
 li{
     color:white;
     font-weight: bold;
+    text-shadow: 0 0 1px #000;
 
 }
 #tela1 main{
@@ -56,39 +66,55 @@ li{
     
 }
 #tela1-fig1{
-    background-color: #4471c4;
+    background-color: #4471c4;    
     height: 40%;
-    width: 80%;
+    width: 70%;
+    display: flex;
+    
 
 }
 #tela1-fig2{
-    background-color: #4471c4;
+    
     width:50%;
     height: 20%;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 3vmin;
+    color: #888;
+    background-color: rgba(238, 182, 61, 0.4);
+    border-radius: 35px;
 }
+#tela1-fig2 h1{
+    color:#ed7d31;   
+    text-shadow: 0 0 1px #000;
+}
+
 #tela2{
-    background-color: orange;
+    background-color: rgb(253, 253, 253);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 #tela2 main{
     width: 95%;
-    height: 60%;
-    background-color: greenyellow;display: flex;
+    height: 60%;   
+    display: flex;
 
 }
 
 #tela2-sec1{
     height: 100%;
-    width: 40%;
-    background-color: #fabc00;
+    width: 40%;    
 }
 #tela2-sec2{
     height: 100%;
     width: 60%;
-    background-color: #fff2cc;
+    padding: 25px;
 }
+#tela2-sec2 h2{
+    text-align: center;
+}
+
 #tela3{
     background-color: #2e74b6;
 }
