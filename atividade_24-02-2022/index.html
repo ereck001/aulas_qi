@@ -16,7 +16,7 @@
                     
                     <a href="#tela2"><li>História</li></a>
                     <a href="#tela3"><li>Serviços e Produtos</li></a>
-                    <a href="https://www.planalto.gov.br/ccivil_03/LEIS/2003/L10.826.htm"><li>Legislação</li></a>
+                    <a href="https://www.planalto.gov.br/ccivil_03/LEIS/2003/L10.826.htm" target="blank"><li>Legislação</li></a>
                     <a href="#mapa"><li>Localização</li></a>
 
                 </ul>
@@ -63,32 +63,34 @@
     </section>
     <section id="tela4">
         <main>  
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/3YRCzhSuYDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="telaMapa" width="560" height="315" src="https://www.youtube.com/embed/3YRCzhSuYDg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </main>
 
     </section>
     <section id="tela5">
         <main>
             <figure>
-                <iframe id = "mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3458.6164622634096!2d-51.18033148488834!3d-29.904150081933484!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95197aa082c34d17%3A0x9f37f87b90b37665!2sQI%20Faculdade%20%26%20Escola%20T%C3%A9cnica%20%7C%20Canoas!5e0!3m2!1spt-BR!2sbr!4v1645644947231!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe id = "mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13817.63599318283!2d-51.17115311627852!3d-30.02512201164595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9519776ba97bf729%3A0x746e6b7d3f1332f8!2sAv.%20Jo%C3%A3o%20Wallig%2C%201800%20-%20Passo%20d&#39;Areia%2C%20Porto%20Alegre%20-%20RS%2C%2091340-000!5e0!3m2!1spt-BR!2sbr!4v1645906616358!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </figure>
         </main>
 
         <section>
-            <div>
+            <button id="poa" 
+            onclick="mapPoa()">
                 Av. João Wallig, 1800 - Passo d'Areia, Porto Alegre - RS, 91349-900
-            </div>
-            <div>
+            </button>
+            <button id="canoas" onclick="mapCanoas()">
                 Av. Guilherme Schell, 6750 - Centro, Canoas - RS, 92310-564
-            </div>
-            <div>
-                BR-116, KM 236 - Operário, RS, 93351-000
-            </div>
-            <div>
+            </button>
+            <button id="nh" onclick="mapNH()">
+                BR-116, KM 236 - Operário,Novo Hamburgo RS, 93351-000
+            </button>
+            <button id="uru" onclick="mapUru()">
                 R. Sete de Setembro, 1083 - Centro, Uruguaiana - RS, 97500-590
-            </div>
+            </button>
         </section>
 
     </section>
 </body>
+<script src="js/script.js"></script>
 </html>

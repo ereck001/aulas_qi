@@ -236,11 +236,15 @@ li{
     
     
 }
-#tela5 section div{
+#tela5 section button{
     width: 90%;
     height: 13.5%;
+    display: flex;
     background-color: rgb(255, 255, 255);
     margin: 4%;
     padding: 5px;
-    text-align: justify;
+    align-items: center;
+    justify-content: center;
+    border: none;
+
 }
