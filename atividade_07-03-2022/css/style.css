@@ -118,32 +118,6 @@ legend{
     height: 25%;
 }
 
-#botao-arquivo{
-    display: flex;    
-    width: 41%;
-    font-size: 2vmin;
-    background-color: rgba(255, 255, 255, 0.507);
-    border-radius: 0.7vmin;
-    height: 4vmin;
-    justify-content: space-between;
-    padding-left: 0;
-
-}
-#botao-arquivo button{
-    height:3.5vmin;
-    background-color: white;
-    color: black;
-    display: flex;
-    align-items: center;
-    margin-left: 0;
-    
-}
-#botao-arquivo div{
-    width: 60%;
-    flex-wrap: nowrap;
-    display: flex;
-    align-items: center;
-}
 #usuario-senha{
     width: 98%;
     height: 10%;
