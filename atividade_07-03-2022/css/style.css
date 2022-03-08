@@ -32,7 +32,7 @@ body{
     display: flex;
     justify-content: center;
 }
-main{
+form{
     width: 60%;
     height: 98%;
     background-color: rgba(0, 0, 0, 0.705);
