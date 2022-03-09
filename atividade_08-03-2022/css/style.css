@@ -39,6 +39,9 @@ header{
     margin: 5px;
 
 }
+#btn-menu:hover{
+    background-color: rgb(185, 103, 2);
+}
 #menu{
     width: 100%;
     height: 0;
@@ -49,6 +52,12 @@ header{
 }
 #menu:target{
     height: 100%;
+}
+#btn-fechar{
+    float: right;
+}
+#btn-fechar i{
+    margin:3px
 }
 #menu ul{
     width: 100%;
