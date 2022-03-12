@@ -12,13 +12,16 @@ a{
     color: rgb(255, 255, 255);
     font-size: 1.2em;
 }
+#topo,#banner,#corpo,#inscrevase,#rodape{
+    float: left;
+}
 body{    
     background-color: darkorange;
 }
 header{
     background-color: rgb(255, 255, 255);
     width: 100%;
-    float: left;
+    
 }
 #logo{
     width: 60px;
@@ -68,4 +71,182 @@ header{
 #menu ul li{
     padding: 7% 3%;
 }
+#banner{
+    width: 100%;
+    background-image: url("../img/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color:white;
+    text-shadow: 0 0 1px #000;
+}
+#texto-banner h1,h2{
+    padding: 2%;
+    font-size: 1.3em;
+    
+    
+}
+#texto-banner h1{
+    font-size: 1.8em;
+}
+#botoes-banner{
+    width: 100%;   
+    display: flex;
+    justify-content: space-around; 
+}
+#botoes-banner button{
+    width: 45%;
+    height: 30px;
+    margin-bottom: 5px;
+    border-radius: 7px;
+    color: darkorange;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#corpo{
+    width: 100%;
+    padding: 3% 4%;
+}
+#corpo figure{
+    width: 100%;
+    background-color: white;
+    font-size: 1.1em;
+    margin-bottom:3%;
+    border-radius: 7px;
+}
+#corpo figure img {
+    width: 100%;
+    border-radius: 7px 7px 0 0 ;
+}
+#corpo figure span h3{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+#corpo figure span p{
+    padding: 5%;
+    text-align: justify;
+    text-indent: 30px;
+    font-size: 1em;
+}
+#inscrevase{
+    width: 100%;
+    color: white;
+    text-shadow: 0 0 1px #000;
+    font-size: 1.3em;
+    text-align: center;
+    margin-bottom: 10px;
 
+}
+#texto-inscrevase h2,h3{
+    margin-bottom: 3%;
+}
+#inscrevase input{
+    width: 98%;
+    height: 35px;
+    margin: 1%;
+    border-radius: 7px;
+    color: chocolate;
+}
+#inscrevase input::placeholder{
+    color:chocolate;
+    font-size: 1.4em;
+    font-style: italic;
+    padding-left: 10px;
+}
+#inscrevase input:nth-child(2){
+    background-color: darkorange;
+    box-shadow: 0 0 3px #fff;
+    color:#fff;
+    font-size: 1.2em;
+}
+#rodape{
+    background-color: chocolate;
+    width: 100%;
+    text-align: center;
+
+}
+#redes-sociais{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+#redes-sociais ul{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    color: rgba(255, 255, 255, 0.7);
+}
+#redes-sociais a{
+    color: rgba(255, 255, 255, 0.7);
+}
+#redes-sociais a:hover{
+    color: rgb(255, 255, 255);
+}
+#redes-sociais a i{
+    transition: 0.2s;
+}
+#redes-sociais a i:hover{
+    transform: scale(1.7);
+}
+#rodape address{
+    color: #fff;
+    font-style: normal;
+    font-size: 0.8em;
+    margin-bottom: 15px;
+    text-shadow: 0 0 1px #000;
+}
+@media(min-width:360px){
+    
+}
+@media(min-width:768px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+        float: none;        
+    }
+    #btn-menu, #btn-fechar i{
+        height: 0;
+        visibility: hidden;
+    }
+    #logo{
+        
+        width: 200px;
+        height: 200px;
+        background-image: url(../img/logo4.png);
+        background-size: contain ;
+        float: none;
+        
+    }
+    #menu{
+        width: 600px;
+        height: 100%;
+        background-color:rgb(255, 255, 255); 
+        position: relative;
+        overflow:auto;
+                
+    }
+    #menu ul{       
+        display: flex;
+        justify-content: space-around;
+        align-items: center;        
+        font-size: 15px;
+        margin: 0;
+        
+        
+    }
+    #menu ul li{
+        padding: 0;
+        color:darkorange;
+
+    }
+}
+@media(min-width:1024px){
+}
