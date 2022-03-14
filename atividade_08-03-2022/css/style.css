@@ -1,10 +1,11 @@
 @charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&display=swap');
 *{
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Baloo Tamma 2', cursive;
     box-sizing: border-box;
     border: none;
 }
@@ -145,12 +146,18 @@ header{
 #texto-inscrevase h2,h3{
     margin-bottom: 3%;
 }
+#formulario-inscrevase{
+    display: flex;
+    flex-direction: column;    
+}
 #inscrevase input{
     width: 98%;
+    
     height: 35px;
     margin: 1%;
     border-radius: 7px;
     color: chocolate;
+    
 }
 #inscrevase input::placeholder{
     color:chocolate;
@@ -247,6 +254,77 @@ header{
         color:darkorange;
 
     }
+    #banner{
+        display: flex;
+    }
+    #texto-banner{
+        width: 60%;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 20px 0 20px;
+    }
+    #texto-banner h2{
+        text-align: justify;
+    }
+    #botoes-banner{
+        flex-direction: column;
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #botoes-banner button{
+        width: 92%;
+        height: 50px;
+        margin-top: 20px;
+    }
+    #corpo figure {
+        display: flex;
+        border-radius: 7px;
+        
+    }
+    #corpo figure img{
+        width: 50%;
+        border-radius: 7px 0 0 7px;        
+        
+    }
+    #inscrevase{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+            
+    }
+    #formulario-inscrevase{
+        width: 350px;
+        
+    }
+    #formulario-inscrevase input{
+        margin-top: 15px;
+    }    
+   
+
 }
 @media(min-width:1024px){
+    #logo{
+        width: 250px;
+        height: 250px;
+    }
+    #corpo{
+        display:flex;
+    }
+    #corpo figure{
+        display: block;
+        margin: 5px;
+    }
+    #corpo figure img{
+        width: 100%;
+        border-radius: 7px 7px 0 0 ;  
+    }
+    
 }
