@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula de JS</title>
+</head>
+<body onload="newContent()">
+    <button id = "botao" onclick="changeColor()">
+        ALTERAR COR
+    </button>
+    
+</body>
+<script>
+document.title = 'JavaScript'
+var nome = window.prompt('Qual seu nome?')
+function newContent(){
+    
+    var novaDiv = document.createElement('div');
+    document.body.style.backgroundColor = 'orange';
+    novaDiv.id = 'nova-div'; 
+    document.getElementById('botao').style = 'color:#fff; background-color:silver;';   
+    document.body.appendChild(novaDiv);
+    document.getElementById('nova-div').style = 'width:300px;height:300px;border-radius:100%;'
+    
+}
+function changeColor(){
+    var simOuNao =  window.confirm(`${nome}, deseja trocar a cor?`)
+    let red = Math.random()*255;
+    let green = Math.random()*255;
+    let blue = Math.random()*255;
+    if(simOuNao == true){
+        document.getElementById('nova-div').style.backgroundColor = `rgb(${red},${green},${blue})`;
+    }
+    
+    
+}
+    
+
+</script>
+</html>
