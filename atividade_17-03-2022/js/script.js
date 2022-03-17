@@ -1,7 +1,4 @@
-let ent1 = document.getElementById("num1");
-let ent2 = document.getElementById("num3");
 
-let num1 = ent1.value;
 
 function calcular() {
     let ent1 = document.getElementById("num1");
@@ -18,13 +15,19 @@ function calcular() {
     let mod = num1 % num2;
     let pow = num1**num2;
     let sqrt = num1 **(1/num2);
-     
-    resposta.innerText = `A soma dos números ${num1} e ${num2} é ${soma}\n 
+    
+    if(ent1.value == '' || ent2.value == ''){
+        alert("preeencha todos os campos!!!")
+    }else{
+        resposta.innerText = `A soma dos números ${num1} e ${num2} é ${soma}\n 
     A subtração de ${num1} por ${num2} é ${subtracao}\n
     A multiplicação dos números ${num1} e ${num2} é ${mult}\n
     A divisão de ${num1} por ${num2} é ${div}\n
     O resto da divisão de ${num1} por ${num2} é ${mod}\n
     A potência de ${num1} por ${num2} é ${pow}\n
     A raiz de ${num1} por ${num2} é ${sqrt}\n`;
+    }
+     
+    
    
 }
