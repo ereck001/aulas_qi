@@ -7,7 +7,7 @@ function calcular(){
     let resultado;
 
     if(valor%2==0 && valor!=0){
-        resultado = 'O valor é par';
+        resultado = `O valor ${valor} é par`;
 
     }else if(valor==0){
         resultado = null;
@@ -15,7 +15,7 @@ function calcular(){
 
     }else{
 
-        resultado = 'O valor é impar';
+        resultado = `O valor ${valor} é impar`;
         
     }
 

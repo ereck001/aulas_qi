@@ -7,10 +7,10 @@ function calcular(){
     let resultado;
 
     if(valor > 0 ){
-        resultado = 'O valor é positivo';
+        resultado = `O valor ${valor} é positivo`;
 
     }else if(valor < 0 ){
-        resultado = 'O valor é negativo';
+        resultado = `O valor ${valor} é negativo`;
     }else{
         resultado = null;
         alert('Valor nulo, informe outro valor! ')

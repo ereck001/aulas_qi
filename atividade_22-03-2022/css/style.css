@@ -1,0 +1,18 @@
+@charset 'utf-8';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    text-align: center;
+    background-color: silver;
+}
+h1{
+    margin: 100px;
+    cursor: pointer;
+}
+#quad{
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+}
