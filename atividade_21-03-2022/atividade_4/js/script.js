@@ -14,7 +14,9 @@ function calcular(){
         alert('Preeencha todos os campos!')
         
     }else{
-        resposta.innerText = `${nome.value}, ${media >= 6? 'Parabéns,você foi aprovado(a)!': 'Infelizmente você foi reprovado(a)'}, sua média é ${media}`
+        resposta.innerText = `${nome.value}, 
+        ${media >= 6? 'Parabéns,você foi aprovado(a)!': 'Infelizmente você foi reprovado(a),'}
+         sua média é ${media}`
     }
     
 

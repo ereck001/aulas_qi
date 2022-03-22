@@ -14,8 +14,8 @@ function calcular(){
 
     let raizDelta = Math.sqrt(delta);
 
-    let x1 = (-b + raizDelta)/2*a;
-    let x2 = (-b - raizDelta)/2*a;
+    let x1 = (-b + raizDelta)/(2*a);
+    let x2 = (-b - raizDelta)/(2*a);
 
    
 
