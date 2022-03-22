@@ -1,4 +1,5 @@
 function calcular(){
+
     let valorAEnt = document.getElementById('valA');
     let valorBEnt = document.getElementById('valB');
     let valorCEnt = document.getElementById('valC');
@@ -12,9 +13,11 @@ function calcular(){
     const delta = b*b-4*a*c;
 
     let raizDelta = Math.sqrt(delta);
+
     let x1 = -b + raizDelta;
     let x2 = -b - raizDelta;
 
-    alert(`A primeira raiz é ${raizDelta}`)
+   
 
+    resposta.innerText = `Uma raiz é ${x1} e a outra é ${x2}`
 }
