@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 23/03</title>
+</head>
+<body>
+    <main>
+        <header>
+            <ul id="menu">
+                <a href="#"><li>Home</li></a>
+                <a href="#"><li>História</li></a>
+                <a href="#" onclick="showCtt()"><li>Contato</li></a>
+            </ul>
+        </header>
+        
+    </main>
+    <div id="contato">
+        <p>
+            <label>
+                Nome:
+                <input type="text" id="fid-nome" name="fn-nome">
+            </label>                                    
+        </p>
+        <p>
+            <label>
+                Email:
+                <input type="email" id="fid-email" name="fn-email">
+            </label>                                    
+        </p>
+        <p>
+            <label>
+                Mensagem:  <br>                 
+                <textarea name="area" id="area" cols="30" rows="10"></textarea>              
+            </label>
+                                               
+        </p>
+        <p id="buttons">
+            <input type="button" value="Enviar" class="btn-tools">
+            <input type="button" value="limpar" class="btn-tools">
+            <button id="cancelar" onclick="cancelar()" class="btn-tools">Cancelar</button>
+        </p>
+        
+    </div>
+    
+</body>
+<script src="js/script.js"></script>
+</html>
