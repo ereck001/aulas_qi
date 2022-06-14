@@ -6,11 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Aula 14-06-2022</title>
+    <title>Atividade Web-2</title>
 </head>
 <body>
+<div id="cortina" onclick="esconderMenu()">
+    <div id="chars">
+        <ul>
+            <li><h2>Personagens principais:</h2></li>
+            <a href="shrek.html"><li>Shrek</li></a>
+            <a href="fiona.html"><li>Fiona</li></a>
+            <a href="donkey.html"><li>Burro</li></a>
+        </ul>
+
+    </div>
+
+</div>
+    
     <header>
-        <menu id='menu-principal'></menu>
+        
+        <section id='menu-principal'>
+            <menu id="botao-menu" onclick="mostrarMenu()" >
+                <p>&#9776;</p>
+            </menu>
+        </section>
         <figure id="logo">
             <img src="assets/img/shrek.png" alt="logo">
         </figure>
@@ -18,20 +36,28 @@
 
     </header>
     <main>
-        <section id = 'texto'>
+        <article id = 'texto'>
             <figure id ='capa'>
                 <img src="assets/img/capa-small.jpg" alt="">
             </figure>
-            <h1>Shrek</h1>
+            <h1>O universo de Shrek</h1>
             <p>&nbsp;&nbsp;&nbsp;Shrek é um filme estadão de 2001 baseado no livro homônimo de William Steig. É a primeira parte da franquia Shrek. Dirigido por Andrew Adamson e Vicky Jenson em suas estreias na direção a partir de um roteiro escrito por Ted Elliott, Terry Rossio, Joe Stillman, e Roger S. H. Schulman, o filme é estrelado por Mike Myers, Eddie Murphy, Cameron Diaz e John Lithgow. No filme, o ogro Shrek (Myers) encontra seu pântano invadido por criaturas de contos de fadas banidos por Lorde Farquaad (Lithgow). Com a ajuda de Donkey (Murphy), Shrek concorda em resgatar a Princesa Fiona (Diaz) para Farquaad recuperar seu pântano.</p>
             <p>&nbsp;&nbsp;&nbsp;Depois de comprar os direitos do livro de Steig em 1991, Steven Spielberg procurou produzir uma adaptação cinematográfica de animação tradicional, mas John H. Williams o convenceu a levar o projeto para a recém-fundada DreamWorks em 1994. Jeffrey Katzenberg começou o desenvolvimento de Shrek em 1995, imediatamente após a compra dos direitos de Spielberg pelo estúdio. Chris Farley foi escalado como a voz do personagem-título, gravando a maior parte do diálogo necessário, mas morreu em 1997 antes que seu trabalho no filme fosse concluído; Myers foi contratado para substituí-lo e deu a Shrek seu icônico sotaque escocês. O filme foi inicialmente destinado a ser criado usando captura de movimento, mas após resultados de testes ruins, o estúdio contratou a Pacific Data Images para completar a animação final por computador. Shrek parodia outras adaptações de contos de fadas, principalmente filmes animados da Disney.</p>
             <p>&nbsp;&nbsp;&nbsp;Shrek estreou no Festival de Cinema de Cannes de 2001, onde competiu pela Palma de Ouro,[7] tornando-se o primeiro filme de animação desde Peter Pan da Disney (1953) a ser escolhido para tal.[8] O filme foi lançado nos cinemas pela DreamWorks Pictures nos Estados Unidos em 18 de maio de 2001 e arrecadou mais de US $ 487 milhões em todo o mundo, tornando-se o quarto filme de maior bilheteria de 2001. Foi amplamente elogiado pela crítica por sua animação, performances de voz, trilha sonora, escrita e humor, que eles notaram que atendia tanto a adultos quanto a crianças. Shrek foi indicado ao Oscar de Melhor Roteiro Adaptado e ganhou o de Melhor Animação. Ganhou seis indicações na Academia Britânica de Artes Cinematográficas e Televisivas (BAFTA), vencendo na categoria de Melhor Roteiro Adaptado.</p>
             <p>&nbsp;&nbsp;&nbsp;O sucesso do filme ajudou a estabelecer a DreamWorks Animation como concorrente da Pixar em animação computadorizada de longa-metragem. Três sequências foram lançadas – Shrek 2 (2004), Shrek Terceiro (2007) e Shrek Para Sempre (2010) – junto com um filme spin-off e outras produções da franquia Shrek. Em 2020, Shrek foi considerado "culturalmente, historicamente ou esteticamente significativo" pela Biblioteca do Congresso dos Estados Unidos e foi selecionado para preservação no National Film Registry. Os planos para um quinto filme foram cancelados e depois revividos em 2016, embora desde então tenham parado e ainda não tenham começado a produção.</p>
 
-        </section>
+        </article>
     </main>
     <footer>
 
     </footer>
 </body>
+<script>
+    function mostrarMenu(){
+        document.getElementById('cortina').style = 'visibility : visible;'
+    }
+    function esconderMenu(){
+        document.getElementById('cortina').style = 'visibility : hidden;'
+    }
+</script>
 </html>

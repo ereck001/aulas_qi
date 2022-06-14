@@ -5,7 +5,53 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    text-decoration: none;
+    list-style: none;
     
+}
+#cortina{
+    position: absolute;
+    visibility: hidden;
+    height: 800px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+#chars{  
+    
+    height: 200px;
+    width: 250px;
+    border-radius: 0 0 0.5em 0;
+    background-color: rgb(230, 230, 230);
+    box-shadow:0 0 1px #000;
+    padding-top: 100px;
+}
+#chars ul {
+    
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#chars ul li{
+    color:green;    
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+#chars ul li:hover{
+    background-color: rgb(209, 207, 207);
+}
+#chars ul li h2{
+    color:#000;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    
+}
+#chars ul li h2:hover{
+    background-color: rgb(230, 230, 230);
 }
 header{
 
@@ -17,7 +63,34 @@ header{
 #menu-principal{
     width: 15%;
     height: 100%;
+   
 }
+#botao-menu{
+    height: 60px;
+    width: 70px;
+    margin:10px;
+    border-radius: 0.5em;
+    background-color: rgb(64, 238, 64);
+    box-shadow: 0 0 1px #000;
+    
+}
+#botao-menu:hover{
+    cursor: pointer;
+    background-color: rgb(51, 109, 17);
+}
+#botao-menu p{
+    margin:0;   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: rgb(34, 34, 34);
+    
+}
+
 #logo{
     
     height: 120%;
@@ -38,7 +111,7 @@ header{
     height: 100%;
 }
 main{
-    height: 1000px;
+    height: 1200px;
     width: 100%;
     background-image: url('../assets/img/shrekshouse.jpg');
     background-attachment: fixed;
@@ -46,7 +119,11 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom:50px;
 
+}
+#main-shrek{
+    height: 1300px;
 }
 #texto{
     margin-top: 50px;
@@ -58,6 +135,19 @@ main{
     text-align: justify;
     border-radius: 0.7em;
 }
+#char-img{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#char-img img{
+    height: 300px;
+    border-radius: 0.3em;
+   
+
+}
 #capa{
     width:100%;
     display: flex;
@@ -67,6 +157,8 @@ main{
 }
 #capa img{
     height: 300px;
+    border-radius: 0.3em;
+    box-shadow: 0 0 5px #000;
 
 }
 h1{
@@ -76,6 +168,7 @@ h1{
 }
 p{
     margin: 10px;
+    text-align: justify;
 }
 footer{
     height: 80px;
