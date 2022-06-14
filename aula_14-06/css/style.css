@@ -1,0 +1,85 @@
+@charset 'utf-8 ';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    
+}
+header{
+
+    height: 80px;
+    width:100%;
+    background-color: rgb(230, 230, 230);
+    display:flex;
+}
+#menu-principal{
+    width: 15%;
+    height: 100%;
+}
+#logo{
+    
+    height: 120%;
+    width: 70%;    
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+#logo img{
+    height: 100%;
+    background-color: rgb(230, 230, 230);
+    padding: 7px;
+    border-radius: 0.8em;
+}
+#space{
+    width: 15%;
+    height: 100%;
+}
+main{
+    height: 1000px;
+    width: 100%;
+    background-image: url('../assets/img/shrekshouse.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#texto{
+    margin-top: 50px;
+    height: 80%;
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.637);
+    padding: 25px;
+    padding-top: 50px;
+    text-align: justify;
+    border-radius: 0.7em;
+}
+#capa{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#capa img{
+    height: 300px;
+
+}
+h1{
+    margin: 25px;
+    width: 100%;
+    text-align: center;
+}
+p{
+    margin: 10px;
+}
+footer{
+    height: 80px;
+    width:100%;
+    background-color: rgb(64, 238, 64);
+    box-shadow: 0 0 2px #000;
+}
