@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Aula QI 20-06</title>
+</head>
+<body>
+    <h1>Catálogo de animes</h1>
+    <main id="corpo">
+        <section class="container">
+            
+        </section>
+        
+    </main>
+    
+    
+    
+</body>
+<script>
+    
+ 
+fetch('https://kitsu.io/api/edge/anime',{
+    method:'GET'
+})
+.then(response => response.json())
+.then(function(json){
+
+    let container = document.querySelector('.container')
+
+    
+
+    json.data.map(function(results){
+        container.innerHTML+=`
+        <div class = 'card'>
+                <img class = 'poster' src='${results.attributes.posterImage.medium}'>
+                <section>
+                <p class='titulo' > Anime:${results.attributes.titles.en_jp}</p>
+                <p class='descricao'>Synopsis:${results.attributes.description}</p>
+                </section>
+        </div>
+        `
+    })
+
+})
+    
+
+
+</script>
+</html>
